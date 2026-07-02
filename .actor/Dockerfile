@@ -1,5 +1,5 @@
 FROM apify/actor-node:20
-COPY package*.json ./
+COPY --chown=myuser:myuser package*.json ./
 RUN npm --quiet set progress=false \
  && npm install --omit=dev --omit=optional \
  && echo "Installed NPM packages:" \
@@ -8,5 +8,5 @@ RUN npm --quiet set progress=false \
  && node --version \
  && echo "NPM version:" \
  && npm --version
-COPY . ./
+COPY --chown=myuser:myuser . ./
 CMD npm start
