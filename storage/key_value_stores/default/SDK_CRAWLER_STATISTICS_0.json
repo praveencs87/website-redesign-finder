@@ -1,0 +1,68 @@
+{
+  "requestsFinished": 2,
+  "requestsFailed": 1,
+  "requestsRetries": 1,
+  "requestsFailedPerMinute": 43,
+  "requestsFinishedPerMinute": 87,
+  "requestMinDurationMillis": 94,
+  "requestMaxDurationMillis": 910,
+  "requestTotalFailedDurationMillis": 272,
+  "requestTotalFinishedDurationMillis": 1004,
+  "crawlerStartedAt": "2026-07-02T07:28:29.691Z",
+  "crawlerFinishedAt": "2026-07-02T07:28:31.048Z",
+  "statsPersistedAt": "2026-07-02T07:28:31.048Z",
+  "crawlerRuntimeMillis": 1372,
+  "crawlerLastStartTimestamp": 1782977309676,
+  "requestRetryHistogram": [
+    2,
+    null,
+    null,
+    1
+  ],
+  "statsId": 0,
+  "requestAvgFailedDurationMillis": 272,
+  "requestAvgFinishedDurationMillis": 502,
+  "requestTotalDurationMillis": 1276,
+  "requestsTotal": 3,
+  "requestsWithStatusCode": {},
+  "errors": {
+    "file:///home/praveen/APIFY/website-redesign-finder/node_modules/got/dist/source/core/index.js:198:21": {
+      "ETIMEDOUT": {
+        "RequestError": {
+          "Unknown error message. Received non-error object, and could not stringify it: RequestError": {
+            "count": 1
+          }
+        }
+      }
+    },
+    "node:net:1134:18": {
+      "ETIMEDOUT": {
+        "AggregateError": {
+          "Unknown error message. Received non-error object: {\"code\":\"ETIMEDOUT\"}": {
+            "count": 1
+          }
+        }
+      }
+    }
+  },
+  "retryErrors": {
+    "file:///home/praveen/APIFY/website-redesign-finder/node_modules/got/dist/source/core/index.js:198:21": {
+      "ETIMEDOUT": {
+        "RequestError": {
+          "Unknown error message. Received non-error object, and could not stringify it: RequestError": {
+            "count": 3
+          }
+        }
+      }
+    },
+    "node:net:1134:18": {
+      "ETIMEDOUT": {
+        "AggregateError": {
+          "Unknown error message. Received non-error object: {\"code\":\"ETIMEDOUT\"}": {
+            "count": 3
+          }
+        }
+      }
+    }
+  }
+}

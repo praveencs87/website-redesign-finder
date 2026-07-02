@@ -1,0 +1,49 @@
+{
+    "title": "Website Redesign Opportunity Finder Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs (optional)",
+            "type": "array",
+            "description": "List of website URLs to audit directly. If empty, niche + location auto-discovery is used.",
+            "editor": "requestListSources"
+        },
+        "niche": {
+            "title": "Niche (for auto-discovery)",
+            "type": "string",
+            "description": "Business niche to search (e.g. 'plumber', 'dentist', 'restaurant'). Used when no startUrls provided.",
+            "editor": "textfield",
+            "prefill": "plumber"
+        },
+        "location": {
+            "title": "Location (for auto-discovery)",
+            "type": "string",
+            "description": "Location to search in (e.g. 'Chicago', 'Austin TX'). Used when no startUrls provided.",
+            "editor": "textfield",
+            "prefill": "Chicago"
+        },
+        "maxSites": {
+            "title": "Maximum Sites to Audit",
+            "type": "integer",
+            "description": "Maximum number of websites to audit.",
+            "default": 50,
+            "minimum": 1
+        },
+        "minOpportunityScore": {
+            "title": "Minimum Opportunity Score (0-5)",
+            "type": "integer",
+            "description": "Only include sites with this opportunity score or higher. Set to 0 to include all.",
+            "default": 2,
+            "minimum": 0,
+            "maximum": 5
+        },
+        "proxyConfiguration": {
+            "title": "Proxy Configuration",
+            "type": "object",
+            "description": "Proxy settings. Required for niche auto-discovery via Google.",
+            "prefill": { "useApifyProxy": true },
+            "editor": "proxy"
+        }
+    }
+}

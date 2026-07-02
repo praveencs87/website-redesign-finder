@@ -1,0 +1,17 @@
+{
+	"url": "https://apify.com",
+	"title": "Apify: The largest marketplace of trusted tools for AI",
+	"opportunity_score": 1,
+	"max_score": 7,
+	"signals_triggered": [
+		"no_schema_markup"
+	],
+	"no_ssl": false,
+	"no_mobile_viewport": false,
+	"no_meta_description": false,
+	"no_favicon": false,
+	"old_copyright": false,
+	"old_cms_detected": false,
+	"no_schema_markup": true,
+	"scrapedAt": "2026-07-02T07:28:30.754Z"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "8OamqXBCpPHxyH9",
+	"json": "{\"id\":\"8OamqXBCpPHxyH9\",\"url\":\"http://example.com\",\"loadedUrl\":\"http://example.com/\",\"uniqueKey\":\"http://example.com\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-07-02T07:28:29.934Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://example.com",
+	"url": "http://example.com"
+}

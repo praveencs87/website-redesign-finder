@@ -1,0 +1,9 @@
+{
+    "startUrls": [
+        { "url": "http://example.com" },
+        { "url": "https://wordpress.org" },
+        { "url": "https://apify.com" }
+    ],
+    "minOpportunityScore": 0,
+    "proxyConfiguration": { "useApifyProxy": false }
+}

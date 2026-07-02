@@ -1,0 +1,19 @@
+{
+	"url": "http://example.com",
+	"title": "Example Domain",
+	"opportunity_score": 3,
+	"max_score": 7,
+	"signals_triggered": [
+		"no_ssl",
+		"no_meta_description",
+		"no_schema_markup"
+	],
+	"no_ssl": true,
+	"no_mobile_viewport": false,
+	"no_meta_description": true,
+	"no_favicon": false,
+	"old_copyright": false,
+	"old_cms_detected": false,
+	"no_schema_markup": true,
+	"scrapedAt": "2026-07-02T07:28:29.925Z"
+}

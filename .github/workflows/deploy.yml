@@ -1,0 +1,17 @@
+name: Deploy to Apify
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Apify Actor Deploy
+        uses: apify/push-actor-action@master
+        with:
+          token: ${{ secrets.APIFY_TOKEN }}
