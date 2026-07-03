@@ -1,42 +1,45 @@
 {
-    "actorSpecification": 1,
-    "name": "website-redesign-finder",
-    "title": "Website Redesign Opportunity Finder",
-    "description": "Find businesses with outdated websites — no SSL, old copyright year, poor mobile UX — perfect for web design agency prospecting.",
-    "version": "1.0",
-    "input": "./input_schema.json",
-    "dockerfile": "./Dockerfile",
-    "minMemoryMbytes": 1024,
-    "maxMemoryMbytes": 4096,
-    "pricingModel": "PAY_PER_EVENT",
-    "pricingEvents": [
-        {
-            "eventName": "apify-actor-start",
-            "pricePerEvent": 0.1,
-            "description": "Base fee for starting the crawler"
-        },
-        {
-            "eventName": "site-audited",
-            "pricePerEvent": 0.002,
-            "description": "Charged per site successfully audited ($2 per 1k sites)"
-        },
-        {
-            "eventName": "lead-extracted",
-            "pricePerEvent": 0.005,
-            "description": "Charged per lead extracted"
-        }
-    ],
-    "isPublic": true,
-    "seoTitle": "Website Redesign Opportunity Finder | Agency Prospecting Tool",
-    "seoDescription": "Find businesses with outdated websites — no SSL, old copyright year, missing mobile viewport — perfect for web design agency prospecting and outreach.",
-    "categories": [
-        "LEAD_GENERATION",
-        "SEO",
-        "MARKETING"
-    ],
-    "defaultRunOptions": {
-        "build": "latest",
-        "timeoutSecs": 1800,
-        "memoryMbytes": 4096
+  "actorSpecification": 1,
+  "name": "website-redesign-finder",
+  "title": "Website Redesign Opportunity Finder",
+  "description": "Find businesses with outdated websites — no SSL, old copyright year, poor mobile UX — perfect for web design agency prospecting.",
+  "version": "1.0",
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile",
+  "minMemoryMbytes": 1024,
+  "maxMemoryMbytes": 4096,
+  "pricingModel": "PAY_PER_EVENT",
+  "pricingEvents": [
+    {
+      "eventName": "apify-actor-start",
+      "pricePerEvent": 0.1,
+      "description": "Base fee for starting the crawler"
+    },
+    {
+      "eventName": "site-audited",
+      "pricePerEvent": 0.002,
+      "description": "Charged per site successfully audited ($2 per 1k sites)"
+    },
+    {
+      "eventName": "lead-extracted",
+      "pricePerEvent": 0.005,
+      "description": "Charged per lead extracted"
     }
+  ],
+  "isPublic": true,
+  "seoTitle": "Website Redesign Opportunity Finder | Agency Prospecting Tool",
+  "seoDescription": "Find businesses with outdated websites — no SSL, old copyright year, missing mobile viewport — perfect for web design agency prospecting and outreach.",
+  "categories": [
+    "LEAD_GENERATION",
+    "SEO",
+    "MARKETING"
+  ],
+  "defaultRunOptions": {
+    "build": "latest",
+    "timeoutSecs": 1800,
+    "memoryMbytes": 4096
+  },
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
 }
