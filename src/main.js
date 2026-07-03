@@ -1,3 +1,4 @@
+import { armKillSwitch, disarmKillSwitch } from './utils/timeoutManager.js';
 import { Actor } from 'apify';
 import { CheerioCrawler, log } from 'crawlee';
 
@@ -167,7 +168,9 @@ try {
     });
 
     await crawler.addRequests(urlsToAudit.slice(0, maxSites).map(url => ({ url })));
+    armKillSwitch(crawler);
     await crawler.run();
+    disarmKillSwitch();
 
     log.info(`🎉 Done! Audited ${auditedCount} sites. Found ${opportunityCount} redesign opportunities!`);
 } catch (error) {
