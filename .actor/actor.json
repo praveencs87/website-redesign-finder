@@ -38,8 +38,5 @@
     "build": "latest",
     "timeoutSecs": 1800,
     "memoryMbytes": 4096
-  },
-  "storages": {
-    "dataset": "./dataset_schema.json"
   }
 }
